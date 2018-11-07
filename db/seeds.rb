@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+flats_attributes = [
+  {
+    name:             'Garagem',
+    address:          'Rua',
+    description:      'Bom sitio',
+    price_per_night:  500,
+    number_of_guests: 2,
+  },
+  {
+    name:             'Sotao',
+    address:          'Telhado',
+    description:      'Melhor sitio',
+    price_per_night:  820,
+    number_of_guests: 4,
+  },
+]

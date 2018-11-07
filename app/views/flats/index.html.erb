@@ -1,0 +1,17 @@
+<h1>⛺ Welcome to AirZnz ⛺</h1>
+<p class="subtitle">(This is AirBnb for tents)</p>
+<div class="row">
+  <div class="col-sm-12 col-md-6 col-md-offset-3">
+    <ul>
+    <% @flats.each do |flat| %>
+    <li> <%= link_to flat_path(flat) do %>
+      <div class=hover> <%= flat.name %> </div>
+      </li><% end %>
+    <% end %>
+    </ul>
+  </div>
+</div>
+
+<h3 style="padding: 20px 0px">Please insert your tent and rent it to other people!</h3>
+
+<%= render 'form' %>

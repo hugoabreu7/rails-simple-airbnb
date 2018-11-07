@@ -1,0 +1,35 @@
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  border: 1px solid rgba(20, 20, 20, 0.1);
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0px 0px 10px 0px;
+  &:hover {
+    background: rgba(203, 118, 158, 0.2)
+  }
+}
+
+.hover {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  &:hover {
+    color: rgba(60, 60, 60, 0.6);
+  }
+}
+
+.description {
+  padding: 6px;
+  margin: 50px 0px 10px 0px;
+  border: 1px solid rgba(20, 20, 20, 0.4);
+  border-radius: 6px;
+  box-shadow: 1px 1px rgba(20, 20, 20, 0.1);
+  display: block;
+  p {
+    margin: 0px;
+  }
+}

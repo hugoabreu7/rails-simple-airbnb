@@ -1,0 +1,21 @@
+<h1>Welcome to <%= @flat.name %>!</h1>
+
+<div class="row">
+<div class="col-sm-12 col-md-6 col-md-offset-3">
+  <div class="description">
+      <p> <%= @flat.name %> is located in <%= @flat.address %>. </p>
+      <p>I bet this is very convenient.</p>
+      <p> More info: <%= @flat.description %> </p>
+      <p> We can accomodate up to <%= @flat.number_of_guests %> guests, for ONLY <%= @flat.price_per_night %> million euros! </p>
+    </div>
+  </div>
+</div>
+
+<h3 style="padding: 20px 0px"> Please reserve now thanks </h3>
+
+<div style="text-align: center"> <p class="btn btn-warning"><%= link_to "Edit this ad", edit_flat_path(@flat) %></p></div>
+
+<div style="text-align: center"> <p class="btn btn-danger"><%= link_to "Delete this tent 🔥",
+  flat_path(@flat), method: :delete, data: { confirm: "This will delete the tent lel please confirm" } %></p></div>
+
+<div style="text-align: center"> <p class="btn btn-warning"><%= link_to "Please take me back 😢", flats_path %></p></div>

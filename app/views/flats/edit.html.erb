@@ -1,0 +1,7 @@
+<h2> Edit "<%= @flat.name %>" </h2>
+
+<%= render 'form', flat: @flat %>
+
+<div style="text-align: center"> <p class="btn btn-warning"><%= link_to "Please take me back 😢", flat_path(@flat) %></p></div>
+
+<div style="text-align: center"> <p class="btn btn-warning"><%= link_to "Take me to tent page", flats_path %></p></div>
